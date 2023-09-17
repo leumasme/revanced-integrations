@@ -10,10 +10,7 @@ import app.revanced.integrations.utils.StringRef;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 import static app.revanced.integrations.settings.SettingsEnum.ReturnType.*;
 import static app.revanced.integrations.settings.SharedPrefCategory.RETURN_YOUTUBE_DISLIKE;
@@ -167,6 +164,9 @@ public enum SettingsEnum {
     SEEKBAR_TAPPING("revanced_seekbar_tapping", BOOLEAN, TRUE),
     SPOOF_SIGNATURE_VERIFICATION("revanced_spoof_signature_verification", BOOLEAN, TRUE, true,
             "revanced_spoof_signature_verification_user_dialog_message"),
+    ANNOUNCEMENTS("revanced_announcements", BOOLEAN, TRUE, false),
+    ANNOUNCEMENT_CONSUMER("revanced_announcement_consumer", STRING, ""),
+    LAST_ANNOUNCEMENT_HASH("revanced_last_announcement_hash", STRING, ""),
 
     // Swipe controls
     SWIPE_BRIGHTNESS("revanced_swipe_brightness", BOOLEAN, TRUE),
